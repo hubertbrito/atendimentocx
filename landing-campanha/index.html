@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criação de Sites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+  <script src="index.js"></script>
+</head>
+<body>
+  <header>
+   <div class="container-topo">
+    <div class="div-logo-topo">
+      <div>
+        <img class="icone-logo-banner" src="assets/padrao02.png" alt="">
+      </div>
+        <img src="assets/logo-clara-bola-roxa.png" alt="Logo" id="topo-logo">
+      </div>
+    <div class="div-palavras-chave">
+      <p></p>
+    </div>
+    <div class="div-whats-button" id="botao-desktop">
+      <button class="whatsapp-button" onclick="window.open('https://wa.me/5531984775695', '_blank')">
+        <i class="fa fa-whatsapp"></i>Conversar pelo WhatsApp
+      </button>
+    </div>
+   </div>
+   
+  </header>
+
+  <main>
+  <section class="hero">
+    <div class="container">
+      <div class="container-readLine">
+        <p>Seu site é sua casa na internet!</p>
+        <h1>
+          Atraia clientes <br> para o seu negócio <br><span class="destaque-cor">estrutura online completa para converter visitantes em clientes</span>
+        </h1>
+        <div class="div-promocao">
+          <p>O plano Start conta
+            com uma estrutura básica: <span class="destaque-promocao">LinkTree +
+              site + ajuda para montar sua companha e atrir clientes.</span> </p>
+        </div>
+        <div class="div-whats-button" id="button-mobile">
+          <button class="whatsapp-button" onclick="window.open('https://wa.me/5531984775695', '_blank')">
+            QUERO UMA ESTRUTURA
+            ONLINE
+          </button>
+        </div>
+
+         <div class="detalhes">
+          <a href="https://demostre.vercel.app" target="_blank">Click aqui e veja exemplos</a>
+          <!-- <p id="detalhes-p">Ouça o nosso podcast abaixo:</p>
+          <audio controls>
+            <source src="assets/Gravação (4) (online-audio-converter.com).mp3" type="audio/mpeg">
+            
+        </audio>
+          <audio controls>
+            <source src="assets/podcast01.mp3" type="audio/mpeg">
+            
+        </audio> -->
+         </div>
+        </div>
+  
+       
+     
+      <div class="container-form" id="formulario">
+       
+           
+          <form>
+            <p> Estratégias de marketing com site, pode aumentar a aquisição de clientes em até 50% 
+              rapidamente.<br><span>(Mensagem será enviada ao Whatsapp)</span></p> 
+            <input type="text" id="nome" placeholder="Nome">
+      
+            <select id="servico" class="servico">
+              <option>Selecione o serviço</option>
+              <option>Criação de Site institucional</option>
+              <option>Landing Page</option>
+              <option>Mini-site empresa</option>
+              <option>Página de Evento</option>
+              <option>Página de venda/contato</option>
+              <option>Hotsite</option>
+              <option>Site para Profissional liberal</option>
+              <option>Reformulação de Site</option>
+              <option>Currículo Web profissional</option>
+              <option>Portifólio de Projetos</option>
+              <option>Portifólio de serviços</option>
+            </select>
+      
+            <button type="button" onclick="enviarParaWhatsApp()">Solicitar Orçamento</button>
+          </form>
+        </div>
+    </div>
+    </section>
+    <section class="secao-modelos">
+       <div class="container-modelos">
+          <div class="texto-modelos">
+            <p>
+              Com seu site você pode fazer Aquisição de novos clientes e a Fidelização dos 
+              clientes já existentes, por exemplo: Pode criar campanhas, Mostrar super ofertas, 
+              oferecer cupons de desconto, colocar banners exclusivos, criar uma vitrine para os seus 
+              produtos. Enfim, as possibilidades são infinitas porque o site é a sua casa e é você quem manda.
+              Controle total do seu site, sem se tornar dependente de plataformas.
+            </p>
+          </div>
+          <div class="figuras-desites">
+            <div class="image-container">
+              <img src="assets/pousada.png" alt="Imagem 2" class="image">
+              <img src="assets/site-restaurant.png" alt="Imagem 1" class="image image2">
+             
+              <!-- <img src="assets/cafeteria.png" alt="Imagem 3" class="image"> -->
+          </div>
+          </div>
+
+       </div>
+
+    </section>
+
+    <section id="servicos">
+      <div>
+        <h2>Nossos Serviços</h2>
+      </div>
+     
+     <div class="servicos">
+      <div class="cartao">
+        <ion-icon name="business-outline" class="icon-cartao1"></ion-icon>
+      
+        <p class="titulo-cartao1">Sites Institucionais</p>
+        <p> <ul>
+          <li>Desenvolvemos páginas elegantes e funcionais que representam você ou 
+            seu negócio de forma profissional.
+          </li>
+          <li>Se você tem um pequeno negócio, criamos um espaço online para mostrar 
+            seus produtos, serviços e informações de contato.</li>
+      </ul></p>  
+      </div>
+
+      <div class="cartao"> 
+        <ion-icon class="titulo-cartao2" name="magnet-outline"></ion-icon>
+        <p class="titulo-cartao2">Landing Pages</p>
+        <p><ul>
+          <li> Páginas únicas e objetivas que contêm informações essenciais sobre 
+            uma oferta, produto ou promoção.</li>
+          <li> Podem disponibilizar materiais relevantes em troca, incentivando o 
+            cadastro. Foco na conversão de visitantes em Leads</li>
+      </ul></p>
+      </div>
+
+      <div class="cartao">
+        <ion-icon name="storefront-outline" class="icon-cartao3"></ion-icon>
+        <p class="titulo-cartao3">Páginas de Vendas</p>
+        <p><ul><li>Desenvolvemos páginas específicas para promover seus 
+          produtos ou serviços. Esta página é para gerar vendas imediatas.</li>
+          <li> Foco na conversão de visitantes em clientes.</li></ul></p>
+      </div>
+    
+      <div class="cartao">
+        <ion-icon class="icon-cartao4" name="megaphone-outline"></ion-icon>
+        <p class="titulo-cartao4">Páginas para Eventos</p>
+        <p> <ul>
+          <li>Se você está organizando um evento, workshop ou outros, criamos 
+            páginas dedicadas para atrair participantes</li>
+            <li>Personalize com efeitos visuais específicos para o 
+              tipo de evento e Fotos ou vídeos podem impressionar.</li>
+      </ul></p>  
+      </div>
+
+      <div class="cartao"> 
+        <ion-icon class="icon-cartao5" name="flame-outline"></ion-icon>
+        <p class="titulo-cartao5">Hotsites</p>
+        <p><ul>
+          <li> Páginas temporárias para campanhas específicas, lançamentos ou promoções. 
+            Hotsite é um site criado para uma campanha específica</li>
+          <li>A diferença entre a Landing Page e o Hotsite é o 
+            propósito. A Landing Page tem um único objetivo, enquanto o 
+            Hotsite pode ter múltiplos.</li>
+      </ul></p>
+      </div>
+
+      <div class="cartao">
+        <ion-icon class="icon-cartao6" name="map-outline"></ion-icon>
+        <p class="titulo-cartao6">Páginas Dinâmicas</p>
+        <p><ul><li>Personalizadas de acordo com suas necessidades, e podem ser do 
+          tipo Cardápio, catálogos online ou portfólios.</li>
+          <li>Geralmente contém caixa de pesquisa para os produtos ou serviços e 
+            filtros com categorias.</li></ul></p>
+      </div>
+     </div>
+
+     <div class="servicos-mobile">
+      <div class="cartao-mobile">
+        <p class="titulo-cartao">Sites Institucionais</p>
+        <p class="texto-cartao"> 
+          Páginas elegantes e funcionais que
+          representam você ou seu negócio de forma
+          profissional. Para isso, criamos um espaço online para
+          mostrar seus produtos, serviços e informações
+          de contato.
+          
+    </p>  
+      </div>
+
+      <div class="cartao-mobile"> 
+        <p class="titulo-cartao">Landing Pages</p>
+        <p class="texto-cartao">
+          Páginas únicas e objetivas que contêm
+          informações essenciais sobre uma oferta,
+          produto ou promoção. Podem disponibilizar
+          materiais relevantes em troca, incentivando o
+          cadastro. Foco na conversão de visitantes em
+          Leads
+    </p>
+      </div>
+
+      <div class="cartao-mobile">
+        <p class="titulo-cartao">Páginas de Vendas</p>
+        <p class="texto-cartao">Desenvolvemos páginas específicas para
+          promover seus produtos ou serviços. Esta
+          página é para gerar vendas imediatas. Possui
+          foco na conversão de visitantes em clientes.
+          </p>
+      </div>
+   
+     
+      <div class="cartao-mobile">
+        <p class="titulo-cartao">Páginas para Eventos</p>
+        <p class="texto-cartao">
+          Se você está organizando um evento,
+          workshop ou outros, criamos páginas
+          dedicadas para atrair participantes
+          
+          Personalize com efeitos visuais específicos
+          para o tipo de evento e Fotos ou vídeos podem
+          impressionar.</p>  
+      </div>
+
+      <div class="cartao-mobile"> 
+        <p class="titulo-cartao">Hotsites</p>
+        <p class="texto-cartao">
+            Hotsite é um site criado para uma campanha específica
+          A diferença entre a Landing Page e o Hotsite é o 
+            propósito. A Landing Page tem um único objetivo, enquanto o 
+            Hotsite pode ter múltiplos.</p>
+      </div>
+
+      <div class="cartao-mobile">
+        <p class="titulo-cartao">Páginas Dinâmicas</p>
+        <p class="texto-cartao">Personalizadas de acordo com suas
+          necessidades no momento, e podem ser do
+          tipo Cardápio, catálogos online ou portfólios.
+          Geralmente contém caixa de pesquisa para os
+          produtos ou serviços e filtros com categorias.</p>
+      </div>
+     </div>
+     <div class="div-whats-button">
+      <p>Não encontrou o que procura? Fazemos seu
+        site de acordo com as suas necessidades!</p>
+      <button class="whatsapp-button" onclick="window.open('https://wa.me/5531988711073', '_blank')">
+        <i class="fa fa-whatsapp"></i>Conversar no WhatsApp
+      </button>
+    </div>
+    </section>  
+   
+    <section>
+    
+      <div>
+        <p class="resume"> Entre em contato conosco, tire suas dúvidas sem nenhum 
+          compromisso. <br><br> Se você quer fazer o branding pessoal brilhar, considere 
+          criar um currículo digital, um portfólio dos seus serviços ou um mini 
+          site para o seu negócio. <br>
+          
+          <span class="destaque-final">
+            <br>Crie a Sua Página na Internet Conosco Hoje Mesmo!
+                <br>Esta é uma oportunidade custo/benefício imperdível! A partir de: <br> 
+          </span>
+          <span class="destaque-cor"><br> R$497,00</span>
+        </p>
+      </div>
+    </section>
+  </main>
+  <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" ></script> 
+  <script nomodule src= "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <footer>
+    <div class="rodape-parallax5">
+      <div class="rodape limite-largura">
+        <div class="logo-rodape">
+          <div>
+            <img
+              class="conjunto-logo-rodape"
+              src="assets/padrao02.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="nome-logo-rodape"
+              src="assets/logo-clara-bola-roxa.png"
+              alt="Logo do rodapé"
+            />
+          </div>
+        </div>
+
+      
+        <div class="rodape-conteudo">
+          <h2 class="titulo-contato-rodape">Contato</h2>
+
+          <ul>
+            <li>
+              <a
+                href="contato.html"
+              >
+                <img
+                  src="assets/local.png"
+                  title="Ícone local"
+                  alt="Ícone local"
+                />
+                <span>Belo Horizonte - MG</span>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+31988711073" tel="+31988711073">
+                <img
+                  src="assets/telefone.png"
+                  title="Ícone telefone"
+                  alt="Ícone telefone"
+                />
+                <span>Telefone: (31) 988711073</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:contato@goowin.com.br">
+                <img
+                  src="assets/email.png"
+                  title="Ícone email"
+                  alt="Ícone email"
+                />
+                <span>Sede: contato@goowin.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com/search?q=goowin+bh&rlz=1C1KNTJ_pt-BRBR996BR996&oq=goowin+bh&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABgIGA0YHjIKCAIQABgIGA0YHjIKCAMQABgIGA0YHjIKCAQQABgIGA0YHjIKCAUQABiABBiiBDIKCAYQABiABBiiBDIKCAcQABiABBiiBNIBCTE5MDUzajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8#ip=1">
+                <ion-icon name="logo-google" class="icon-google"></ion-icon>
+                <span>Maps e a pesquisa</span>
+              </a>
+            </li>
+           
+            <!-- Adicione mais itens de lista conforme necessário -->
+          </ul>
+        </div>
+
+        <div class="rodape-conteudo">
+          <h2 class="titulo-sociais-rodape">Nossas Redes Sociais</h2>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=61559273840378"
+                target="_blank"
+              >
+                <img
+                  src="assets/fb.png"
+                  title="Ícone facebook"
+                  alt="Ícone facebook"
+                />
+                <span>/AgenciaGooWin.facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/goowin.digital"
+                target="_blank"
+              >
+                <img
+                  src="assets/ig.png"
+                  title="Ícone instagram"
+                  alt="Ícone instagram"
+                />
+                <span>@GooWin.digital</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/@GooWin.digital"
+                target="_blank"
+              >
+                <img
+                  src="assets/tt.png"
+                  title="Ícone twitter"
+                  alt="Ícone twitter"
+                />
+                <span>/GooWin.twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-rodape">
+      <!-- Rodapé da página -->
+      <p>&copy; GooWin - Produtora digital - 2024</p>
+    </div>
+  </footer>
+  <script src="../curriculo/minisite.js"></script>
+</body>
+</html>
