@@ -26,7 +26,9 @@ main {
   display: flex;
   flex-direction: row;
 }
-
+.preco{
+  padding: 12px;
+}
 h3, p{
     color: #ffffff;
 }
