@@ -1,0 +1,147 @@
+/* proposta_style.css */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    -webkit-text-size-adjust: 100%;
+}
+
+.document-container {
+    max-width: 630px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 0px 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.document-title {
+    color: #007bff; /* Título principal azul */
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+.item-title {
+    color: #007bff; /* Títulos dos itens azuis */
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    font-size: 1.2em;
+}
+
+.item-paragraph {
+    margin-bottom: 15px;
+    font-size: 1em; /* Tamanho base da fonte */
+}
+
+.item-list {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.list-item {
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.item-details {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #777;
+}
+
+.detail-item {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+/* Estilos para telas menores (smartphones) */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    .document-container {
+        padding: 20px;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+
+    .document-title {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .item-title {
+        font-size: 1em;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding-bottom: 4px;
+    }
+
+    .item-paragraph,
+    .list-item,
+    .detail-item {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+
+    .item-list {
+        padding-left: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Estilos para telas médias (tablets e notebooks menores) */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    .document-container {
+        padding: 25px;
+        margin: 15px auto;
+    }
+
+    .document-title {
+        font-size: 1.6em;
+        margin-bottom: 25px;
+    }
+
+    .item-title {
+        font-size: 1.4em;
+        margin-top: 20px;
+        margin-bottom: 12px;
+    }
+
+    .item-paragraph,
+    .list-item,
+    .detail-item {
+        font-size: 1em;
+        margin-bottom: 12px;
+    }
+
+    .item-list {
+        padding-left: 20px;
+        margin-bottom: 12px;
+    }
+}
+
+/* Estilos para telas grandes (monitores maiores) */
+@media screen and (min-width: 993px) {
+    .document-title {
+        font-size: 1.6em;
+    }
+
+    .item-title {
+        font-size: 1.2em;
+    }
+
+    .item-paragraph,
+    .list-item,
+    .detail-item {
+        font-size: 1em;
+    }
+}
