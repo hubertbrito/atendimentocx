@@ -1,0 +1,251 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+h1{
+    font-size: 1.4em;
+}
+.container {
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 960px;
+}
+
+.secao-principal {
+    margin-top: 20px;
+    padding: 21px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.container > .secao-principal:first-child {
+    border: none; /* Remove a borda do header */
+    padding: 0;
+    margin-top: 0;
+}
+
+.secao-principal h2 {
+    color: blue;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1em; /* Título com fonte 13 */
+}
+
+.secao-principal h3 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.secao-principal p,
+.secao-principal li {
+    font-size: 15px; /* Texto com fonte 12 */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.secao-principal ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* Estilização do Formulário de Aceite */
+.formulario-aceite {
+    border: 2px solid #007bff; /* Borda mais grossa e azul para destaque */
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 30px;
+    background-color: #f9f9f9; /* Um fundo levemente diferente */
+}
+
+.formulario-aceite h4 {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.formulario-aceite label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em; /* Labels um pouco maiores */
+    font-weight: bold; /* Labels em negrito para destacar */
+    color: #333;
+}
+
+.formulario-aceite input[type="text"],
+.formulario-aceite input[type="email"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.formulario-aceite .termo-aceite {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.formulario-aceite .botao-enviar {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-aceite .botao-enviar:hover {
+    background-color: #218838;
+}
+/* ... (seu CSS existente) ... */
+
+.formulario-aceite .termo-aceite {
+    font-size: 1.1em; /* Aumentando um pouco o tamanho da fonte */
+    font-weight: bold; /* Deixando em negrito para destacar */
+    color: #25D366; /* Verde similar ao do WhatsApp */
+    display: flex; /* Para alinhar o checkbox e o texto */
+    align-items: center; /* Alinhamento vertical */
+}
+
+.formulario-aceite .termo-aceite input[type="checkbox"] {
+    width: 1.5em; /* Aumentando o tamanho da caixa de seleção */
+    height: 1.5em;
+    margin-right: 10px; /* Espaço entre a caixa e o texto */
+}
+
+/* ... (seu CSS responsivo existente) ... */
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        margin: 1px;
+        padding: 6px;
+        border-radius: 8px;
+    }
+
+    .secao-principal {
+        margin-top: 15px;
+        padding: 12px;
+        border-radius: 6px;
+    }
+
+    .secao-principal h2 {
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+
+    .secao-principal p,
+    .secao-principal li {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .formulario-aceite form {
+        margin-bottom: 8em;
+    }
+    .formulario-aceite h4 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+    .formulario-aceite label {
+        font-size: 1em;
+    }
+
+    .formulario-aceite .botao-enviar {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 85%;
+        margin: 15px;
+        padding: 18px;
+        border-radius: 10px;
+    }
+
+    .secao-principal {
+        margin-top: 18px;
+        padding: 14px;
+        border-radius: 8px;
+    }
+
+    .secao-principal h2 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .secao-principal p,
+    .secao-principal li {
+        font-size: 16px;
+        margin-bottom: 9px;
+    }
+
+    .formulario-aceite h4 {
+        font-size: 1.6em;
+    }
+
+    .formulario-aceite label {
+        font-size: 1.05em;
+    }
+
+    .formulario-aceite .botao-enviar {
+        font-size: 1.05em;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        border-radius: 12px;
+        margin: 20px auto;
+    }
+
+    .secao-principal {
+        margin-top: 20px;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    .secao-principal h2 {
+        font-size: 1.1em;
+        margin-bottom: 12px;
+    }
+
+    .secao-principal p,
+    .secao-principal li {
+        font-size: 16px;
+        margin-bottom: 11px;
+    }
+
+    .formulario-aceite h4 {
+        font-size: 1.6em;
+    }
+
+    .formulario-aceite label {
+        font-size: 1.1em;
+    }
+
+    .formulario-aceite .botao-enviar {
+        font-size: 1.1em;
+    }
+}
