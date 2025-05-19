@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column; /* Organizar header, main content e footer em coluna */
+    align-items: center; /* Centralizar horizontalmente o conteúdo principal */
+    min-height: 100vh;
+    box-sizing: border-box; /* Incluir padding e border na largura e altura */
+    overflow-x: hidden; /* Prevenir scroll horizontal */
+}
+
+.cabecalho {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.logo-container {
+    max-width: 150px; /* Ajuste o tamanho máximo do logo */
+    margin: 0 auto 20px; /* Centralizar o logo e adicionar margem abaixo */
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remover espaço extra abaixo da imagem */
+}
+
+.apresentacao-container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 0px 40px;
+    box-sizing: border-box; /* Incluir padding na largura */
+}
+
+.secao-apresentacao {
+    margin-bottom: 60px;
+    opacity: 0.9;
+    box-sizing: border-box; /* Incluir padding e border na largura */
+}
+
+.secao-apresentacao h2,
+.secao-apresentacao h3,
+.card h4 {
+    color: #d2b48c;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.secao-apresentacao h2 {
+    font-size: 32px;
+    text-align: left; /* Alinhar título à esquerda na primeira seção */
+}
+
+.secao-apresentacao h3 {
+    font-size: 24px;
+}
+
+.secao-apresentacao p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box; /* Incluir padding e border na largura */
+}
+
+.card {
+    background-color: #333;
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.lista-servicos {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    box-sizing: border-box; /* Incluir padding e border na largura */
+}
+
+.lista-servicos li {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.quatro-cards .card {
+    min-width: 250px;
+}
+
+/* Estilos específicos para a primeira seção */
+.primeira-secao {
+    display: flex;
+    flex-wrap: wrap; /* Quebrar para coluna em telas menores */
+    align-items: center; /* Alinhar verticalmente no centro */
+    justify-content: space-between; /* Espaço entre texto e imagem */
+}
+
+.A
+.rodape {
+    width: 100%;
+    background-color: #222;
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    box-sizing: border-box; /* Incluir padding na largura */
+}
+
+/* Responsividade */
+
+/* Para tablets */
+@media (max-width: 992px) {
+    .apresentacao-container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .secao-apresentacao h2 {
+        font-size: 28px;
+    }
+
+    .secao-apresentacao h3 {
+        font-size: 22px;
+    }
+
+    .secao-apresentacao p,
+    .lista-servicos li,
+    .card p {
+        font-size: 16px;
+    }
+
+    .cards-container {
+        gap: 20px;
+    }
+
+    .card {
+        min-width: 200px;
+        padding: 20px;
+    }
+
+    .card h4 {
+        font-size: 18px;
+    }
+
+    /* Ajuste para a primeira seção em tablets */
+    .primeira-secao .texto-inicial,
+    .primeira-secao .imagem-inicial {
+        width: 100%; /* Ocupar 100% da largura em tablets */
+        margin-bottom: 20px; /* Adicionar espaço entre texto e imagem */
+    }
+}
+
+/* Para smartphones */
+@media (max-width: 600px) {
+    .apresentacao-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .secao-apresentacao {
+        margin-bottom: 40px;
+    }
+
+    .secao-apresentacao h2 {
+        font-size: 24px;
+    }
+
+    .secao-apresentacao h3 {
+        font-size: 20px;
+    }
+
+    .secao-apresentacao p,
+    .lista-servicos li,
+    .card p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        min-width: auto;
+        padding: 15px;
+    }
+
+    .card h4 {
+        font-size: 16px;
+    }
+
+    .lista-servicos {
+        padding-left: 20px;
+    }
+
+    /* Ajuste para a primeira seção em smartphones */
+    .primeira-secao .texto-inicial,
+    .primeira-secao .imagem-inicial {
+        width: 100%; /* Ocupar 100% da largura em smartphones */
+        margin-bottom: 15px;
+    }
+}
+
+/* Para telas muito grandes */
+@media (min-width: 1201px) {
+    .apresentacao-container {
+        padding: 0 60px 60px;
+    }
+
+    .secao-apresentacao h2 {
+        font-size: 40px;
+    }
+
+    .secao-apresentacao h3 {
+        font-size: 30px;
+    }
+
+    .secao-apresentacao p,
+    .lista-servicos li,
+    .card p {
+        font-size: 20px;
+        line-height: 2.0;
+    }
+
+    .card h4 {
+        font-size: 24px;
+    }
+}

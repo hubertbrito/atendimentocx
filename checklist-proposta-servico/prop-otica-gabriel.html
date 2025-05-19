@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proposta de Serviço - Nova Óptica São Gabriel</title>
-    <link rel="stylesheet" href="prop-otica-gabriel.css">
+    <link rel="stylesheet" href="style-global.css">
 </head>
 <body>
     <div class="container">
@@ -95,12 +95,12 @@
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="a0d1a7db-27da-47e3-bcce-8c0bd744b96f">
 
-                <label>Nome Completo:<br>
+                <label>Nome Completo ou Nome da Empresa:<br>
                     <input type="text" name="nome" required>
                 </label><br><br>
 
-                <label>CPF:<br>
-                    <input type="text" name="cpf" required pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" placeholder="000.000.000-00">
+                <label for="cpf">CPF ou CNPJ:<br>
+                    <input type="text" name="cpf" required>
                 </label><br><br>
 
                 <label>E-mail:<br>

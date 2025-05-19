@@ -1,0 +1,314 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-weight: bold;
+    color: #333;
+    font-size: 20px; /* Aumentei um pouco para o título principal */
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px; /* Aumentei a margem abaixo do título principal */
+}
+
+h2 {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px; /* Ajustei o tamanho do h2 dentro do container */
+    margin-top: 0; /* Removi a margem superior padrão do h2 */
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-weight: bold;
+    color: #555;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: -33px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin: 8px 0; /* Adicionei margem vertical para espaçamento */
+    font-weight: 500;
+    text-align: left;
+}
+
+form.ckecklist-form {
+    text-align: left;
+    background-color: #fff;
+    padding: 20px; /* Reduzi um pouco o padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    width: 60%;
+    max-width: 642px;
+    margin: 20px auto; /* Reduzi a margem superior e inferior */
+}
+
+input[type="text"],
+input[type="email"] {
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 3px;
+    display: block;
+    width: calc(100% - 16px);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px; /* Aumentei um pouco a margem à direita do checkbox */
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: green;
+}
+
+.completed {
+    accent-color: green !important;
+}
+
+/* Estilos para a seção do cronograma */
+.checklist-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    width: 60%;
+    max-width: 642px;
+    margin: 20px auto;
+}
+
+.checklist-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.checklist-item:last-child {
+    border-bottom: none;
+}
+
+.checklist-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.checklist-item p {
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.checklist-item ul.item-details {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+.checklist-item ul.item-details li {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    body {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    h4 {
+        font-size: 14px;
+        margin-bottom: 0px; /* Ajustei a margem para telas menores */
+    }
+
+    form.ckecklist-form,
+    .checklist-container {
+        padding: 15px;
+        margin: 15px auto;
+        border-radius: 8px;
+        width: 93%;
+    }
+
+    label {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        margin-top: 15px;
+    }
+
+    .checklist-item {
+        padding: 10px 0;
+    }
+
+    .checklist-item p {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .checklist-item ul.item-details {
+        padding-left: 20px;
+    }
+
+    .checklist-item ul.item-details li {
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    form.ckecklist-form,
+    .checklist-container {
+        padding: 25px;
+        margin: 30px auto;
+        border-radius: 15px;
+        width: 50%; /* Reduzi um pouco a largura para telas maiores */
+        max-width: none; /* Removi o max-width para melhor adaptação */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    h3 {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    h4 {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+
+    form.ckecklist-form,
+    .checklist-container {
+        padding: 10px;
+        margin: 10px auto;
+        border-radius: 6px;
+        width: 86%;
+    }
+
+    label {
+        font-size: 12px;
+        margin: 4px 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    .checklist-item p {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .checklist-item ul.item-details {
+        padding-left: 15px;
+    }
+
+    .checklist-item ul.item-details li {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+}
