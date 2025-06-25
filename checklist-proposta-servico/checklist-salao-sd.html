@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checklist de Desenvolvimento</title>
     <link rel="stylesheet" href="checklist.css">
+    <style>
+       .checkbox-laranja:checked {
+           accent-color: orange !important;
+  }
+    </style>
+
    
 </head>
 <body>
     <h1>Checklist de Desenvolvimento da Loja Virtual</h1>
     <form class="ckecklist-form" id="checklist-form">
         <label><input type="checkbox" id="etapa1" checked> Compra da Hospedagem e Domínio</label><br>
-        <label><input type="checkbox" id="etapa2" checked> Pagamento da Entrada 1º parcela</label><br>
-        <label><input type="checkbox" id="etapa3"> Instalação do WordPress e Plugins Essenciais</label><br>
-        <label><input type="checkbox" id="etapa4"> Configuração gerais da loja, pagamentos, checkout, e envio</label><br>
-        <label><input type="checkbox" id="etapa5"> Escolha e instalação do Template</label><br>
-        <label><input type="checkbox" id="etapa6"> Personalização do Template e layout</label><br>
+        <label><input type="checkbox" id="etapa3" checked> Instalação do WordPress e Plugins Essenciais</label><br>
+        <label><input type="checkbox" id="etapa4" checked> Escolha e instalação do Template</label><br>
+        <label><input type="checkbox" id="etapa5" class="checkbox-laranja" checked> Configuração gerais da loja, pagamentos, checkout, e envio</label><br>
+        <label><input type="checkbox" id="etapa6" class="checkbox-laranja" checked> Personalização do Template e layout</label><br>
         <label><input type="checkbox" id="etapa7"> Cadastro dos Produtos</label><br>
         <label><input type="checkbox" id="etapa8"> Configuração de Documentação Fiscal</label><br>
         <label><input type="checkbox" id="etapa9"> Configuração de emails transacionais</label><br>
@@ -38,7 +43,7 @@
             <p><strong>Cliente:</strong> O nome de domínio foi adquirido juntamente com a hospedagem. Aguarda-se a definição do nome específico para configuração.</p>
         </div>
     
-        <div class="checklist-item">
+        <!-- <div class="checklist-item">
             <h3>Pagamento da Entrada 1º parcela</h3>
             <p><strong>Cliente:</strong> Definir e realizar o pagamento da primeira parcela da entrada até o dia 7 de maio de 2025 ou em data acordada.</p>
             <p><strong>Desenvolvedor:</strong> Confirmar o recebimento do pagamento para dar andamento às próximas etapas.</p>
@@ -48,38 +53,43 @@
                 <li>Data Escolhida: [Preencher]</li>
                 <li>Status: [Preencher]</li>
             </ul>
-        </div>
+        </div> -->
     
         <div class="checklist-item">
             <h3>Instalação do WordPress e Plugins Essenciais</h3>
             <p><strong>Desenvolvedor:</strong> Realizar a instalação da plataforma WordPress no ambiente de hospedagem.</p>
             <p><strong>Desenvolvedor:</strong> Instalar e configurar os plugins essenciais para o funcionamento da loja virtual, incluindo o plugin de e-commerce.</p>
         </div>
-    
-        <div class="checklist-item">
-            <h3>Configuração gerais da loja, pagamentos, checkout, e envio</h3>
-            <p><strong>Desenvolvedor:</strong> Configurar as definições gerais da loja virtual (moeda, localização, etc.).</p>
-            <p><strong>Desenvolvedor:</strong> Integrar e configurar os métodos de pagamento escolhidos.</p>
-            <p><strong>Desenvolvedor:</strong> Otimizar o processo de checkout para uma boa experiência do usuário.</p>
-            <p><strong>Desenvolvedor:</strong> Configurar as opções de envio e cálculo de frete.</p>
-        </div>
-    
-        <div class="checklist-item">
+
+          <div class="checklist-item">
             <h3>Escolha e instalação do Template</h3>
             <p><strong>Cliente:</strong> Analisar e escolher o template (layout visual) que melhor se adapta à loja.</p>
             <p><strong>Desenvolvedor:</strong> Realizar a instalação do template escolhido na plataforma WordPress.</p>
         </div>
     
+    
+     <div class="checklist-item">
+        <h3>Configuração Geral da Loja, Pagamentos, Checkout e Envio</h3>
+        
+        <p><strong>Integração de Pagamentos:</strong> <strong>Cliente:</strong> Informa os métodos de pagamento desejados (ex: Pix, Cartão de Crédito, Boleto, PayPal, etc.) e os tokens de checkout gerados.</p>
+        <p><strong>Desenvolvedor:</strong> Integra e configura os métodos de pagamento escolhidos pelo cliente.</p>
+
+        <p><strong>Otimização do Checkout:</strong> <strong>Desenvolvedor:</strong> Otimiza o processo para garantir uma experiência de compra fluida ao usuário.</p>
+
+        <p><strong>Opções de Envio e Frete:</strong> <strong>Cliente:</strong> Fornece as informações de envio (ex: formas de entrega preferenciais - Correios, transportadoras; modalidades - PAC, SEDEX, etc.; áreas de entrega).</p>
+        <p><strong>Desenvolvedor:</strong> Configura as opções de envio e cálculo de frete com base nas informações fornecidas.</p>
+     </div>
+
         <div class="checklist-item">
             <h3>Personalização do Template e layout</h3>
             <p><strong>Desenvolvedor:</strong> Personalizar o template com a identidade visual da marca (cores, fontes, logotipo).</p>
             <p><strong>Desenvolvedor:</strong> Ajustar o layout das páginas principais da loja para uma boa apresentação dos produtos e informações.</p>
-            <p><strong>Cliente:</strong> Avaliar e aprovar o design personalizado.</p>
+            <p><strong>Cliente:</strong>Escolher as cores, fontes e fornecer para o desenvolvedor. E Avaliar e aprovar o design personalizado.</p>
         </div>
     
         <div class="checklist-item">
             <h3>Cadastro dos Produtos</h3>
-            <p><strong>Cliente:</strong> Fornecer todas as informações detalhadas dos produtos (nome, descrição, fotos, preços, variações, etc.).</p>
+            <p><strong>Cliente:</strong> Fornecer todas as informações detalhadas dos produtos (nome, descrição, fotos, preços, variações, categorias, etc.).</p>
             <p><strong>Desenvolvedor:</strong> Realizar o cadastro inicial dos produtos na loja virtual, organizando-os por categorias.</p>
         </div>
     
